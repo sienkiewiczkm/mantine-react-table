@@ -143,7 +143,7 @@ export const MRT_TableBodyRow = <TData extends Record<string, any> = {}>({
             />
           ) : (
             <MRT_TableBodyCell
-              key={cell.id + cell.getValue?.toString()}
+              key={cell.id + cell.getValue()?.toString()}
               {...props}
             />
           );
